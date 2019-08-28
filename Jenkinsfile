@@ -1,8 +1,8 @@
 pipeline {
     /* A Declrative Pipeline */
-    agent any
+    agent any /*Any agent can run. Master or Slave*/
 
-    stages{
+    stages{ 
         stage('Build'){
             steps{
                 sh 'mvn clean package'
